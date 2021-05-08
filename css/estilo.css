@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+body {
+	background-color: rgba(2, 55, 55, 0.2);
+	width: auto;
+	font-family: arial, sans-seif;
+}
+
+p {
+	margin-top: 5px;
+	margin-right: 40px;
+	margin-left: 30px;
+	text-indent: 50px;
+	font-size: 12pt;
+	text-align: justify;
+	font-weight: 100;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+	margin-left: 0px;
+  margin-bottom: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1 {
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 20pt;
+	text-align: justify;
+	text-decoration: underline;
+}
+
+h2 {
+	margin-top: 5px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	font-size: 18pt;
+	text-align: justify;
+	text-decoration: none;
+}
+	
+h3 {
+	margin-top: 5px;
+	margin-right: 30px;
+	margin-left: 30px;
+	text-indent: 50px;
+	font-size: 12pt;
+	text-align: justify;
+	font-weight: 100;
+}
+
+h3.attcorpo {
+	margin-right: 30px;
+	margin-left: 80px;
+	
+}
+
+.attprincipal {
+	color: rgba(215, 44, 40, 1);
+	font-weight: 600;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+h6 {
+	margin-left: 45%;
+	font-size: 16pt;
+}
+	
+
+/* Cabeçalho da Página */
+div header#tagstopo h1 {
+	text-align: justify;
+	margin-left: 200px;
+	margin-right: 0%;
+	font-weight: 600;
+}
+
+/*TABELA GERAL - BORDAS DA TABELA*/
+table.tabelaprincipal {
+	border-collapse: collapse;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+	
+/*ROW TOP DA TABELA*/
+table.tabelaprincipal .cetop  {
+	border: 1px solid;
+	width: 200pt;
+	text-align: center;
+	font-weight: 600;
+	font-size: 14pt;
+}
+
+table.tabelaprincipal .cmtop  {
+	border: 1px solid;
+	width: 850pt;
+	text-align: center;
+	font-weight: 600;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14pt;
+}
+
+table.tabelaprincipal .cdtop  {
+	border: 1px solid;
+	width: 400pt;
+	text-align: center;
+	font-weight: 600;
+	padding-top: 0px;
+	padding-left: 10px;
+	font-size: 14pt;
+}
+
+/*DEMAIS ROWS*/
+table.tabelaprincipal .cetag  {
+	border: 1px solid;
+	width: 120pt;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+table.tabelaprincipal .cmtag  {
+	border: 1px solid;
+	width: 850pt;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: justify;
+	text-indent: 20px;
+}
+
+table.tabelaprincipal .cdtag  {
+	border: 1px solid;
+	width: 400px;
+	text-align: center;
+	padding-left: 0 px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-indent: 0px;
+}
+
+/*TABELA EXEMPLOUM */
+table.tabelasecundaria  {
+	border: 1px solid;
+	width: 440px;
+	text-align: justify;
+	font-weight:100;
+	font-size: 12pt;
+	margin-left: 15%;
+	margin-right: 0%;
+	margin-top: 15px;
+	padding-left: 0px;
+	background-color: rgba(255, 255, 255, 1);
+	position: relative;
+	float: center;
+}
+
+/* SEPARADOR BULL */
+.separador {
+	border-top: 1px solid;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border-bottom: 1px solid;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	margin-right: 33%;
+	margin-left: 33%;
+	margin-bottom: 10px;
+	text-align: center;
+}

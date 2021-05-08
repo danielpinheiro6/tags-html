@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<title>HTML5 e CSS3</title>
+		<meta charset="UTF-8" name="keywords"content="construção Web, criar página, HTML5, CSS3, tags, tags HTML5, própria Web, tutorial HTML, tutorial HTML5, tutorial CSS3"/>
+		
+		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/> -->
+	</head>
+
+	<!-- CABEÇALHO -->
+	<body>
+		<div id="cabecalho">
+			<header id="tagstopo">		
+				<h1>HTML5 e CSS3</h1><br/>
+			</header>
+			<header id="padrao">
+				<hgroup>
+					<h2>Principais tags de HTML</h2>
+				</hgroup>
+			</header>
+		</div>
+		
+		<!-- TABELA -->
+		<div id="divtabela01">
+				<table id="tabela" class="tabelaprincipal">
+			
+		<!--LINHA TOP DA TABELA -->
+				<tr><td class="cetop">Tags</td> <td class="cmtop">Descrição</td><td class="cdtop">Exemplos</td></tr>
+				
+		<!--DEMAIS LINHAS - COPIAR E COLAR COMANDO
+				<tr>
+					<td class="cetag">&lt;ESCREVER TAG AQUI&gt;</td>
+					<td class="cmtag"> ESCREVER DESCRIÇÃO AQUI</td>
+					<td class="cdtag">Escrever aqui exemplo.</td>
+				</tr>
+		-->
+				<tr>
+					<td class="cetag">&lt;!DOCTYPE&gt;</td>
+					<td class="cmtag">Primeira tag a ser digitada em seu código. Serve para informar ao navegador a linguagem de seu código. Como estamos tratando de HTML, o exemplo utilizado será dessa linguagem.</td>
+					<td class="cdtag">&lt;!DOCTYPE html&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;html&gt;<br/><br/>&lt;/html&gt;</td>
+					<td class="cmtag">Indica o início e o fim do seu código. Todo o código deve ser escrito entre as respectivas tags de abertura e fechamento. Como a tag &lt;html&gt; indica o início, deve-se complementá-la informando o idioma de sua página utilizando o termo "lang". Isso facilita a classificação de seu site em bancos de dados (do Google, por exemplo).</td>
+					<td class="cdtag">&lt;html lang="pt-br"&gt;<br/><br/>&lt;/html&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;head&gt;<br/><br/>&lt;/head&gt;</td>
+					<td class="cmtag">É o "cérebro" de sua página, onde o título e as diretrizes devem ser informadas, tais como os arquivos css, jquery, javascript, entre outros.</td>
+					<td class="cdtag">&lt;head&gt;<br/><br/>&lt;/head&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;meta/&gt;</td>
+					<td class="cmtag">Metadados. Utilizado para esclarecer ao navegador coisas que o HTML não consegue, como, por exemplo, o método de formatação do texto. O método aqui utilizado é o "UTF-8" e, para isso, utiliza-se o parâmetro "charset". Como &lt;meta&gt; é um parâmetro que não possui tag de fechamento utiliza-se a "/" antes de seu próprio fechamento.</td>
+					<td class="cdtag">&lt;meta charset="UTF-8"/&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;title&gt;<br/><br/>&lt;/title&gt;</td>
+					<td class="cmtag">O título de sua página. Informação que será descrita na aba de seu navegador. Deve ser escrita dentro da tag <i>head</i>.</td>
+					<td class="cdtag">&lt;title&gt;&nbsp;Hello, World!&nbsp;&lt;/title&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;body&gt;<br/><br/>&lt;/body&gt;</td>
+					<td class="cmtag">A tag <i>body</i>; delimita o corpo do texto. Deve ser escrita dentro da tag &lt;head&gt; e, com exceção de algumas, todas as demais tags serão escritas dentro desta. Com a tag <i>body</i>, o esqueleto do código HTML está pronto para ser exibido em um	navegador.</td>
+					<td class="cdtag">&lt;body&gt;<br/><br/>&lt;/body&gt;</td>														
+				</tr>
+			</table>
+		</div>
+			
+			<br/>
+		
+		<!-- TABELA EXEMPLO 01 -->
+		<div id="exemplo01">
+				<header id="padrao">
+					<hgroup>
+						<h2>Exemplo nº 01</h2>
+						<h3>Se você entendeu até aqui, seu código deve estar parecido com isso:</h3>
+						<table id="tabela02" class="tabelasecundaria">
+						<tr>
+							<td>
+									&nbsp;&lt;!DOCTYPE html&gt;<br/><br/>
+									&nbsp;&lt;html lang="pt-br"&gt;<br/><br/>
+									&nbsp;&nbsp;&nbsp;&lt;head&gt;<br/><br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&nbsp;Hello, World!&nbsp;&lt;/title&gt;<br/><br/>
+									&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br/><br/>
+									&nbsp;&nbsp;&nbsp;&lt;body&gt;<br/><br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concluída a primeira etapa!!!<br/><br/>
+									&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/><br/>
+									&nbsp;&lt;/html&gt;<br/>														
+							</td>
+						</tr>
+						</table>
+						
+						<br/>
+						
+			<!-- FINAL DA TABELA 01 -->
+						
+						<h3>Se o seu código está idêntico ao exemplo acima, basta salvar o resultado utilizando a extensão ".html" e abrir o arquivo em seu navegador. Se você está utilizando o editor Notepad++, que foi o utilizado para a construção deste site e também o navegador Google Chrome, os quais eu recomendo, basta pressionar "shift &plus; ctrl &plus; alt &plus; R" que o resultado da programação será mostrado no navegador Chrome. Lembre-se que para toda e qualquer alteração feita no código é necessário salvá-lo antes de rodá-lo. Caso contrário, não surtirá efeito.</h3>
+												
+						<h3>Note que a frase no "body" de sua página aparece na formatação padrão do navegador e o títlo da página, "Hello, World!", aparece corretamente. Logo abaixo você aprenderá a formatar o texto de sua página. Por enquanto, sugiro você agora a praticar um pouco. Experimente, por exemplo apagar a linha onde você informou ao navegador qual a formatação utilizada em seu código. Para quem não se lembra, esse parâmetro foi "charset". Apague essa linha, salve o documento e atualize a página do navegador para ver o resultado.</h3>
+						
+						<h3>Note, portanto, que para programar um código exige-se, além do conhecimento de linguagem, a chamada de lógica de programação, pois as vezes um simples ";" ou um "&lt;", ou a falta deles, pode comprometer todo seu trabalho.</h3>
+																		
+						<h3> Pronto para dar início à personalização do seu código? Vamos lá.</h3>
+					</hgroup>
+				</header>
+		</div>
+		
+		
+			<!-- TABELA 02 -->
+		<div id="tabela02">
+			<table id="tabela02" class="tabelaprincipal">
+			
+		<!--LINHA TOP DA TABELA 02-->
+				<tr><td class="cetop">Tags</td> <td class="cmtop">Descrição</td><td class="cdtop">Exemplos</td></tr>
+				
+		<!--DEMAIS LINHAS - COPIAR E COLAR COMANDO
+				<tr>
+					<td class="cetag">&lt;ESCREVER TAG AQUI&gt;</td>
+					<td class="cmtag"> ESCREVER DESCRIÇÃO AQUI</td>
+					<td class="cdtag">Escrever aqui exemplo.</td>
+				</tr>
+		-->
+		
+				<tr>
+					<td class="cetag">&lt;div&gt;<br/><br/>&lt;/div&gt;</td>
+					<td class="cmtag"> Cria divisões na sua página. Essencial para que sua página seja formatada com certa facilidade.</td>
+					<td class="cdtag">&lt;div&gt;<br/><br/>&lt;/div&gt;</td>
+		
+				<tr>
+					<td class="cetag">&lt;p&gt;<br/><br/>&lt;/p&gt;</td>
+					<td class="cmtag">Cria parágrafo para seu texto. Mas atenção, a tag <em>parágrafo</em> em HTML segue alguns  parâmetros da página, de modo que você não conseguirá alterar as margens dele, por exemplo.</td>
+					<td class="cdtag">&lt;p&gt; Concluída sua primeira etapa!!! &lt;/p&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;h1&gt;&nbsp;&lt;/h1&gt;<br/><br/>&lt;h2&gt;&nbsp;&lt;/h2&gt;</td>
+					<td class="cmtag"> A sequência de tags <em>h1</em>, <em>h2</em>, <em>h3</em> etc, podem utilizadas para organizar textos de forma estruturada, como se o <em>h1</em>, por exemplo, fosse o título, <em>h2</em> o texto e <em>h3</em> as informações de rodapé, por exemplo. O intervalo dessas tags vai de <em>h1</em> a <em>h6</em>.</td>
+					<td class="cdtag" style="text-align: left; padding-left: 30px;">&lt;h1&gt;&nbsp;<span style="font-weight: 600; font-size: 14pt; text-decoration: underline;">HTML5 e CSS3</span>.</b>&nbsp;&lt;/h1&gt;<br/><br/>&lt;h2&gt;&nbsp;O site mais completo do mundo.&nbsp;&lt;/h2&gt;<br/><br/><span style="text-decoration: italic;">&lt;h3&gt;<sub>Autor: Unknown</sub></span>&lt;/h3&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;hgroup&gt;<br/><br/>&lt;/hgroup&gt;</td>
+					<td class="cmtag"> Serve para agrupar as tags <em>h1</em>, <em>h2</em> e <em>h3</em> em grupos, melhorando a semântica de seu código.<br/><sub><span style="font-size: 8pt; display: block; float:right;"><em>*** Será abordado adiante. ***</em></span></sub></td>
+					<td class="cdtag" style="text-align: left; padding-left: 30px;">&lt;hgroup&gt;<br/>&nbsp;&lt;h1&gt; Título &lt;/h1&gt;<br/>&nbsp;&lt;h2&gt; Leia rápido papibaquígrafo. &lt;/h2&gt;<br/>&nbsp;&lt;h3&gt;<sub> Trava língua </sub>&lt;/h3&gt;<br/>&lt;/hgroup&gt;</td>
+				</tr>
+			</table>
+			<!-- Fim da tabela 02 -->
+			
+			<br/>
+				
+						<h3>Com essas tags, se você prestou bastante atenção, já é possível deixar os textos de sua página com uma aparência muito melhor. Tente escrever por conta uma página qualquer, salve o editor de texto e atualize a página de seu navegador para verificar o resultado.</h3>
+						
+						<h3>A tag <em>&lt;div&gt;</em> merece um destaque muito grande e você entenderá isso quando estudar CSS. Quando for criar seu site, imagine que ele tenha várias divisões como se ele fosse criado em blocos que se encaixam perfeitamente. Não há uma regra para utilização de <em>div</em>'s, mas sua correta utilização poupar-lhe-á bastante tempo.</h3>
+		
+						<h3><span style="font-weight: 600; text-decoration: underline;">IMPORTANTE!</span> Lembre-se de fazer pequenas alterações, salvar e verificar o resultado. Nunca faça muitas alterações de uma só vez antes de verificar o resultado, pois se você errar talvez fique bem complicado de localizar o erro.</h3>
+		</div>
+			
+			<!-- Separador BULL -->
+		<div id="separadorbull" class="separador">
+							<br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/><br/><br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/><br/><br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/><br/><br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/>
+		</div>			
+						
+		<!-- EXEMPLO 02 -->
+		<div id="exemplo02" class="exemplo02">
+			<hgroup>
+				<h2>Exemplo nº 02</h2>
+					<h3>E aí? Funcionou?</h3>
+					<h3>Veja se seu código ficou parecido com isso:</h3>
+					<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;
+&nbsp;&nbsp;&lt;title&gt;Hello, World!&lt;/title&gt;
+&nbsp;&lt;/head&gt;
+&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&lt;hgroup&gt;
+&nbsp;&nbsp;&nbsp;&lt;h1&gt;PARABÉNS!!&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&lt;h2&gt;Você conseguiu cumprir a segunta etapa!&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&lt;h3&gt;Se você entendeu até aqui, você já entendeu o principal da lógica <wbr/>HTML.&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&lt;h3&gt;Daqui pra frente você vai precisar aprender organizar melhor sua página e depois aprender a linguagem CSS para deixar sua página do jeito que você quiser.&lt;/h3&gt;
+&nbsp;&nbsp;&lt;/hgroup&gt;
+&nbsp;&nbsp;&nbsp;&lt;p&gt;Veja a diferença entre utilizar as tags de texto estruturado e parágrafo.&lt;/p&gt;	
+&nbsp;&lt;/body&gt;
+&lt;/html&gt;</pre>
+			</hgroup>
+		</div>
+		
+		<!-- FINAL DO EXEMPLO 02 -->
+		
+		<!-- FINAL DA PARTE 02 -->
+		
+				
+		<!-- INÍCIO DA PARTE 03 -->
+		<div id="parte03">
+			<h3>Feito isso, vamos adicionar algumas imagens, áudios e vídeos ao site.</h3>
+			<h3>Teste os comandos da tabela seguinte diversas vezes. Nos exemplos abaixo fazemos referência ao Notepad++ e ao Google Chrome. Mas tente você, por sua própria conta, linkar outros sites e programas. Para isso, crie em seu código um parágrafo para cada tag e atributo e veja os resultados.</h3>
+			
+			<!--DEMAIS LINHAS - COPIAR E COLAR COMANDO
+				<tr>
+					<td class="cetag">&lt;ESCREVER TAG AQUI&gt;</td>
+					<td class="cmtag"> ESCREVER DESCRIÇÃO AQUI</td>
+					<td class="cdtag">Escrever aqui exemplo.</td>
+				</tr>
+		-->
+						
+			<!-- TABELA 03 -->
+			<table id="tabela02" class="tabelaprincipal">
+				<tr>
+					<td class="cetag">&lt;a&gt;<br/><br/>&lt;/a&gt;</td>
+					<td class="cmtag"><em>Anchor</em>. Adiciona <em>hyperlinks</em> ao seu código.</td>
+					<td class="cdtag">&lt;a href="https://notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag"><em><span style="color: rgba(215, 44, 40, 1);">href</span></em></td>
+					<td class="cmtag"> <em>Hypertext Reference</em>. Atributo HTML. Busca fonte externa que tenha relação com o código ou documento, como arquivos <em>css</em>, links de outros sites etc.</td>
+					<td class="cdtag">&lt;a href="http://www.google.com.<wbr/>br/<wbr/>chrome/"&gt;Google Chrome.&lt;/a&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag"><em><span style="color: rgba(215, 44, 40, 1);">target</span></em></td>
+					<td class="cmtag"> Atributo da tag <em>a</em>. Aceita os valores <em>_blank</em>, <em>_self</em>, <em>_parent</em>, <em>_top</em> e <em>framename</em>. O valor "<em>_blank</em>", por exemplo, direciona o link para uma nova aba.</td>
+					<td class="cdtag">&lt;a href="https://<wbr/>notepad-plus-<wbr/>plus.org/" target="_blank"&gt;Notepad++&lt;/a&gt;</td>
+				</tr>
+				
+					<tr>
+					<td class="cetag"><em><span style="color: rgba(215, 44, 40, 1);">src</span></em></td>
+					<td class="cmtag"> <em>Source</em>. Atributo HTML. Tem função semelhante ao <em>href</em>, porém serve para buscar fontes externas que não tenha relação direta com o código, como vídeos do YouTube e imagens, por exemplo.</td>
+					<td class="cdtag">-</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;iframe&gt;<br/><br/>&lt;/iframe&gt;</td>
+					<td class="cmtag">Cria uma área em sua página para exibir conteúdos externos.</td>
+					<td class="cdtag">&lt;iframe width="560" height="315" src="https://www.youtube.com/<wbr/>embed/<wbr/>rsFCVjr5yxc"&gt;&lt;/iframe&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;img/&gt;</td>
+					<td class="cmtag"> Adiciona uma imagem a sua página. Exige o atributo <em><span style="text-decoration: underline";>src</span></em> como complemento.</td>
+					<td class="cdtag">&lt;img src="http://fineprintnyc.com/<wbr/>images/blog/<wbr/>history-<wbr/>of-logos/google/<wbr/>google-logo.png/&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;video&gt;<br/><br/>&lt;/video&gt;</td>
+					<td class="cmtag">Adiciona um vídeo à sua página. A tag <em>video</em> exige que o arquivo de vídeo esteja hospedado em seu servidor, sendo necesário, por meio do atributo <em>src</em>, informar o caminho do vídeo e por meio do atributo <em>type</em>a extensão do arquivo. Importante salientar que por enquanto apenas as extensões <em>MP4</em>, <em>WebM</em> e <em>OGG</em> são aceitas.</td>
+					<td class="cdtag">&lt;video src="<wbr/>videos/nomedovideo.mp4" type="video/mp4"&gt;<br/>&lt;/video&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;audio&gt;<br/><br/>&lt;/audio&gt;</td>
+					<td class="cmtag"> Adiciona um áudio ao seu site. Respeita as mesmas regras que a tag <em>video</em>, porém aceita as extensões <em>MP3</em>, <em>WAV</em> e <em>OGG</em>.</td>
+					<td class="cdtag">&lt;audio src="<wbr/>audios/nomedoaudio.wav" type="audio/wav"&gt;<br/>&lt;/audio&gt;</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag"><em><span style="color: rgba(215, 44, 40, 1);">type</span></em></td>
+					<td class="cmtag">Atributo HTML utilizado para informar ao navegador o tipo de informação que segue a <em>tag</em>, podendo essa <em>tag</em> referir-se a um texto, uma função etc.</td>
+					<td class="cdtag">&lt;link type=<wbr/>"arquivocss/css"/&gt;.<br/>
+					login: &lt;input type="text"&gt;<br/>
+					&lt;input type="submit" value="Submit"&gt;
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="cetag">&lt;input&gt;<br/><br/>&lt;/input&gt;</td>
+					<td class="cmtag"> Cria campo de formulário para preenchimento do usuário ou, ainda, botões a que podem ser designadas determinadas funções. Por exemplo, enviar o formulário.</td>
+					<td class="cdtag" span style="text-align: left; padding-left:30px;">Nome &lt;input type="text"&gt;<br/>
+					senha &lt;input type="password"&gt;<br/>
+					&lt;input type="submit" value="Submit"&gt;</td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		<!-- FINAL DA TABELA 03 -->
+
+		<br/>
+		
+		<!-- TABELA EXEMPLO 03 -->
+		
+		<div id="exemplo03" class="exemplo03">
+			<hgroup>
+				<h2>Exemplo nº 03</h2>
+				<h3>Agora seu site já pode conter várias coisas. Busque exemplos na internet e pratique. Não se esqueça de que a estrutura básica de seu site é a parte HTML de seu código enquanto a formatação de sua página ficará a cargo, quase que por inteiro, da linguagem CSS, que será ensinada adiante.</h3>
+				<h3>Vamos ver um exemplo de código utilizando todas as tags e atributos já ensinados e, claro, um pouco mais:</h3>
+				<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;
+&nbsp;&nbsp;&lt;title&gt;Hello, World!&lt;/title&gt;
+&nbsp;&lt;/head&gt;
+&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Se você consegue ver esse texto em seu navegador é porque está no caminho certo.&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Vamos fazer um teste agora com cada uma das tags e parâmetros ensinados até o momento.&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Vamos lá:&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&lt;/hgroup&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Primeiro, caso queira fazer o download do editor de texto Notepad++, &lt;a href="https://notepad-plus-plus.org/" target="_blank"&gt;clique aqui&lt;/a&gt;&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Caso queira abrir a página do editor nesta aba, &lt;a href="https://notepad-plus-plus.org/"&gt;clique aqui&lt;/a&gt;&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Se quiser assistir a um vídeo do YouTube em sua página basta carregar a página do vídeo no site YouTube, clicar em compartilhar, incorporar e colar o link em seu código, exatamente como feito abaixo:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rsFCVjr5yxc"&gt;&lt;/iframe&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Carregando uma imagem da web:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="http://fineprintnyc.com/images/blog/history-of-logos/google/google-logo.png"/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Para adicionar vídeo e áudio armazenados em seu servidor é necessário fazer da seguinte forma:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;video src="videos/teste.mp4" type="video/mp4" controls&gt;&lt;/video&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;audio src="audios/alarm.wav" type="audio/wav" controls&gt;&lt;/audio&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Para criar um formulário, por exemplo, faça da seguinte forma:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome &lt;input type="text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email &lt;input type="email"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de Nascimento &lt;input type="date"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Endereço &lt;input type="address"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cidade &lt;input type="city"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estado &lt;input type="state"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP &lt;input type="zipcode"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;senha &lt;input type="password"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;
+
+&nbsp;&nbsp;&lt;/hgroup&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&lt;/body&gt;
+
+&nbsp;&lt;footer style="margin: 50px";&gt;&lt;a href="http://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;&nbsp;&brvbar;&nbsp;&lt;a href="http://www.twitter.com" target="_blank">Twitter&lt;/a&gt;&lt;/footer&gt;
+
+&lt;/html&gt;</pre>
+			</hgroup>
+		</div>
+		
+		<!-- FINAL DO EXEMPLO 03 -->
+		
+		<!-- INÍCIO DO EXEMPLO 04 -->
+				
+		<div>
+				<h2>Exemplo nº 04</h2>
+				<h3>Se você copiar e colar o código acima em seu navegador verá que mesmo você tendo tomado cuidado com a formatação de parágrafos, dando enter entre as linhas, o resultado no navegador sai um fiasco, principalmente no campo onde seria o formulário.</h3>
+				
+				<h3>Uma das formas de melhorar isso é utilizando a tag <span style="font-weight: 600;">&lt;br/&gt;</span>, que serve para quebrar linha, podendo ser utilizado quantas vezes quiser. Aqui faremos de um jeito, mas você pode experimentar utilizá-la em seu código de maneiras diferentes.</h3>
+				
+				<h3> Outra tag em HTML que pode te ajudar é <span style="font-weight: 600;">&lt;!--&gt;</span>, que permite criar comentários em seu site para facilitar identificação de divisões, marcar partes importantes ou também simplesmente comentar. Veja abaixo alguns exemplos.</h3>
+				
+				
+				<!-- EXEMPLO COM <br/> e tag de exemplo -->
+				
+								<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;
+&nbsp;&nbsp;&lt;title&gt;Hello, World!&lt;/title&gt;
+&nbsp;&lt;/head&gt;
+
+&nbsp;&lt;br/&gt;
+
+&nbsp;&lt;!-- AQUI COMEÇA O CORPO DE SEU CÓDIGO --&gt;
+
+&nbsp;&lt;body&gt;
+
+&nbsp;&lt;!-- DIV 01 --&gt;
+
+&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Se você consegue ver esse texto em seu navegador é porque está no caminho certo.&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Vamos fazer um teste agora com cada uma das tags e parâmetros ensinados até o momento.&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Vamos lá:&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&lt;/hgroup&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&lt;!-- DIV 02 --&gt;
+
+&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&lt;hgroup&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Primeiro, caso queira fazer o download do editor de texto Notepad++, &lt;a href="https://notepad-plus-plus.org/" target="_blank"&gt;clique aqui&lt;/a&gt;&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Caso queira abrir a página do editor nesta aba, &lt;a href="https://notepad-plus-plus.org/"&gt;clique aqui&lt;/a&gt;&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Se quiser assistir a um vídeo do YouTube em sua página basta carregar a página do vídeo no site YouTube, clicar em compartilhar, incorporar e colar o link em seu código, exatamente como feito abaixo:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rsFCVjr5yxc"&gt;&lt;/iframe&gt;
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Carregando uma imagem da web:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="http://fineprintnyc.com/images/blog/history-of-logos/google/google-logo.png"/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Para adicionar vídeo e áudio armazenados em seu servidor é necessário fazer da seguinte forma:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;video src="videos/teste.mp4" type="video/mp4" controls&gt;&lt;/video&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;audio src="audios/alarm.wav" type="audio/wav" controls&gt;&lt;/audio&gt;&lt;br/&gt;&lt;br/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Para criar um formulário, por exemplo, faça da seguinte forma:&lt;/h3&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome &lt;input type="text"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email &lt;input type="email"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de Nascimento &lt;input type="date"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Endereço &lt;input type="address"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cidade &lt;input type="city"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estado &lt;input type="state"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP &lt;input type="zipcode"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;senha &lt;input type="password"&gt;&lt;br/&gt;&lt;br/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;&lt;br/&gt;&lt;br/&gt;
+
+&nbsp;&nbsp;&lt;/hgroup&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&lt;/body&gt;
+
+&nbsp;&lt;!-- RODAPÉ --&gt;
+
+&nbsp;&lt;footer style="margin: 50px";&gt;&lt;a href="http://www.facebook.com" target="_blank"&gt;Facebook&lt;/a&gt;&nbsp;&brvbar;&nbsp;&lt;a href="http://www.twitter.com" target="_blank">Twitter&lt;/a&gt;&lt;/footer&gt;
+
+&lt;/html&gt;</pre>
+						
+					<h3>Melhorou, né?</h3>
+					<h3>Agora, vamos dar nome às coisas.</h3>
+					
+		</div>
+		
+				<!-- FINAL DO EXEMPLO 04 -->
+				
+				<br/><br/>
+				
+				<div id="separadorbull" class="separador">
+							<br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/><br/><br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/><br/><br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/><br/><br/>
+							&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;<br/><br/>
+		</div>			
+		
+				<br/><br/>
+		
+		<div>
+					<h2>Dando valores  aos atributos <span class="attprincipal";>id</span> e <span class="attprincipal";>class</span></h2>
+					
+					<h3>Não há obrigatoriedade em utilizar esses atributos quando se programa em HTML. No entanto, conforme dito anteriormente, se bem utilizados eles podem fazer muita diferença ao seu trabalho. A principal delas é economia de tempo. Você verá que após feita a divisão, identificação e classificação dos parâmetros, seu trabalho será muito bem compensado.</h3><br/>
+					
+					<h3 class="attprincipal" style="font-size: 14pt;">id</h3>
+					
+					<h3 class="attcorpo">O atributo <em>id</em> serve para identificar as partes de seu código, permitindo manipulações do tipo "ir até o topo" ou "ir a determinado local da página", bem como tratamento por meio de outras linguagens, como JavaScript, por exemplo.
+					</h3>
+					
+					<h3 class="attcorpo">Um exemplo de modelo JavaScript poderia ser uma simples questão de matemática:</h3>
+					
+					<h2>Exemplo nº 05</h2>
+					<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;
+&nbsp;&lt;/head&gt;
+
+&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&lt;h1 id="exemplo"&gt;Quanto é 5 + 5?&lt;/h1&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onclick="displayResult()"&gt;Resposta&lt;/button&gt;
+
+&nbsp;&nbsp;&lt;script&gt;
+&nbsp;&nbsp;&nbsp;function displayResult() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("exemplo").innerHTML = "10";
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&lt;/script&gt;
+
+&nbsp;&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+		</div>
+
+		<div>
+		<h3>Note que para a função JavaScript "<span style="font-style: italic";>document.getElementById</span>" funcionar foi necessário estabelecer uma ligação com o código HTML, que, neste caso, foi feita por meio do atributo <span style="font-style: italic; color: rgba(215, 0, 0, 0.9);">id</span>. A leitura do código no exemplo acima seria algo do tipo: <span style="font-style: italic;">ao clicar no botão de função "displayResult", localizar o elemento do texto que tem a Id "exemplo" e substituir o conteúdo HTML desse Id por "10"</span>.</h3>
+		
+			<br/>
+		
+		<h3 class="attprincipal" style="font-size: 14pt;">class</h3>
+		
+		<h3 class="attcorpo">O atributo class permite customizar sua página. Com ele é possível definir o estilo de fonte, cor do fundo, parágrafo etc. de blocos inteiros, separados por div's e demais tags.</h3>
+		<h3 class="attcorpo">Ou seja, é possível configurar uma vez só o estilo do texto que você quer que apareça em seu site ao invés de ter que defini-lo parágrafo por parágrafo.</h3>
+		<h3 class="attcorpo">Para esclarecer melhor essa questão, demonstraremos no exemplo abaixo como customizar seu texto de duas formas. Uma menos trabalhosa e outra inviável. Veja:</h3>
+		
+		<!-- ÍNÍCIO DO EXEMPLO 04 -->
+		
+		<h2>Exemplo nº 04</h2>
+		
+		<pre>
+&nbsp;&lt;!DOCTYPE html&gt;
+&nbsp;&lt;html lang="pt-br"&gt;
+&nbsp;&nbsp;&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&nbsp;Customizando seu texto do jeito certo&nbsp;&lt;/title&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div.colors {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: rgba(215, 0, 0, 0.3);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: black;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-left: 30%;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-right: 30%;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div.colors2 {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: rgba(0, 0, 0, 0.9);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-left: 30%;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-right: 30%;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+&nbsp;&nbsp;&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="colors"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Fazendo dessa forma você precisa configurar uma só vez a forma como quer que seu código apareça.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Da próxima vez que quiser que o texto tenha a mesma formatação basta atribuir o nome da classe para a div correspondente.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="colors2"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Vamos fazer a mesma coisa sem utilizar as classes, mas utilizando a tag span.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&lt;br/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="margin-left: 30%; margin-right: 30%; text-align: justify; background-color: rgba(215, 0, 0, 0.3);"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;span style="color: blue;"&gt;Imagine o trabalho ter que escrever ou copiar e colar esse código toda vez que desejar formatar um texto dessa forma? Imagine quando quiser dar uma mudada em seu site. Qual seria mais prático?&lt;/span&gt;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="margin-left: 30%; margin-right: 30%; text-align: justify;"&gt;
+&lt;p&gt;&lt;span style="background-color: black; color: white;"&gt; Note, todavia, que é possível formatar o texto de forma diferente, mas você pode classificar seu código em várias classes e utilizar a formatação pré-definida para cada uma delas sem ter que copiar e colar o código de formatação toda vez que precisar.&lt;/span&gt;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+&nbsp;&lt;/html&gt;				
+		</pre>
+	</div>
+		
+	<div>
+		<hgroup>
+			<h3>Perceba que o estilo do texto é feito no campo "<em><span style="text-decoration: underline;">head</span></em>", que é o cérebro de seu código. Da forma como feito significa que tudo que está dentro de uma <em>div</em> de classe "<em>colors</em>" receberá a formatação dada a "div.colors". O mesmo ocorre com o que estiver dentro de "div.colors2".</h3>
+			
+			<h3>Uma observação importante é que mesmo classificada uma div, se por acaso forem atribuídos estilos específicos à tag, o resultado se mostrará de acordo com os estilos específicos e não como os estilos da respectiva div.</h3>
+			
+			<h3>Por exemplo, mesmo que a "div.colors" estabeleça a cor da fonte como preta, se por acaso for atribuído um "span style="color: blue" dentro da tag &lt;p&gt;, o texto sairá azul e não preto.</h3>
+		</hgroup>
+	</div>
+			
+			<br/>
+		<!--Fim do EXEMPLO 04 -->
+
+	<hr/>
+
+		<br/>
+		
+		<!--INÍCIO DA CONSTRUÇÃO DE UM MENU -->
+		
+		<div>
+			<hgroup>
+				<h2>Construindo um menu</h2>
+				<h3>As principais tags HTML já foram mostradas acima. A partir de agora, você já deve ter praticado um pouco e entendido um pouco mais a linguagem e sua lógica. A partir de agora, mostraremos exemplos mais diretos de códigos, mas sempre bem detalhado.</h3>
+				<h3>Para construir um menu utilzaremos a tag &lt;nav&gt;. Em primeiro lugar, é preciso decidir onde ficará esse menu. Neste caso, faremos o menu aparecer no topo da tela. Pronto?</h3>
+				
+				<!-- INÍCIO DO EXEMPLO 05 - MENU -->
+				
+				<h2> Exemplo nº 05</h2>
+				<h3>A tag utilizada será a tag &lt;nav&gt; acompanhada das tags &lt;li&gt;.</h3>
+				
+				<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&lt;meta charset="UTF-8"/&gt;
+&nbsp;&lt;/head&gt;
+
+&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&lt;h1 id="exemplo"&gt;Quanto é 5 + 5?&lt;/h1&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onclick="displayResult()"&gt;Resposta&lt;/button&gt;
+
+&nbsp;&nbsp;&lt;script&gt;
+&nbsp;&nbsp;&nbsp;function displayResult() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("exemplo").innerHTML = "10";
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&lt;/script&gt;
+
+&nbsp;&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+				
+				
+				
+				
+				
+			</hgroup>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		
+		
+		
+		
+		
+		<p>&lt;span style="font-weight:900;"&gt; resulta em<span style="font-weight:900;">  Negrito máximo.</span></p>
+		<p>&lt;span style="font-weight:100;"&gt; resulta em <span style="font-weight:100;"> Negrito mínimo.</span></p>
+		<p span style="text-indent:50px;">span style="text-indent:50px;" adiciona parágrafo </span></p>
+		<p>A TAG 'sup' gera um resultado de <sup>sobrescrito,</sup>enquanto a TAG 'sub' gera um resultado de <sub>subescrito.</sub> Ex.:</br> H<sub>2</sub>O<sup>2-</sup>.</p>
+		<p>O comando &lt;pre&gt; &lt;/pre&gt; permite que o HTML5 leia o texto como pré-formatado, ou seja, levará em consideração todos os caracteres da forma como foram escritos no texto. Ex.: </br>&lt;pre&gt; No alto daquele cume plantei um pé de roseira O vento no cume bate A rosa no cume cheira &lt;/pre&gt; será mostrado da seguinte forma:<pre>
+	No alto daquele cume
+	plantei um pé de roseira
+	O vento no cume bate
+	A rosa no cume cheira</pre></p>
+	
+	
+	<h1>CORES</h1>
+	<p span style="text-indent:50px";>Antigamente, o método para utilizar cores era, por exemplo, &lt;body bgcolor:"red"&gt;. Atualmente utiliza-se 'css' com a tag &lt;body style="background-color: rgba(0,0,0,1);"&gt;. Exemplo seria:<span style="color: rgba(255,0,0,1);"> O Márcio vai sair deste grupo porque eu tô mandando</span>.</p>
+	<p span style="text-indent"
+	<h2>Fundo de tela</h2>
+	<p>Para adiocionar cores ao fundo de tela basta adicionar a tag &lt;spam style="backgroud-color: rgba(X, X, X, 1);"&gt;.</p>
+	<p>Para adicionar imagem basta utilizar a tag: </br><pre>		background-image: url("caminho do arquivo.jpg");</pre>.</p>
+	
+	<p>&lt;wbr/&gt; significa word breaker. Divide a palavra caso ela não caiba na tela zoom in zoom out. Porém, não coloca hífen. Para que o hífen apareça deve-se utilizar a tag &shy; </p>
+	
+	<h1> Símbolos especiais:</h1>
+			<p>
+			&lt;
+			&gt;
+			&le;
+			&ge; <br/>
+			
+			&pound;
+			&yen;
+			&euro; <br/>
+			
+			&copy;
+			&reg;
+			&trade; <br/>
+			
+			&permil;
+			&sum;
+			&infin;
+			&times;
+			&plusmn;
+			&oplus;
+			&radic;
+			&ne; <br/>
+			
+			&delta;
+			&Delta;
+			&lambda;
+			&omega;
+			&phi; <br/>
+			
+			&larr;
+			&Larr;
+			&rarr;
+			&Rarr;
+			&uarr;
+			&darr;
+			&harr; <br/>
+			
+			&spades;
+			&clubs;
+			&hearts;
+			&diams;
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+	
+	
+	</p>
+	
+	E AQUI
+	
+			
+		</div>
+		
+	</body>
+
+</html>
+
+<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
